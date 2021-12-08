@@ -41,7 +41,7 @@ class radiateur(Daemon):
         super().__init__(pidfile=self.pidfile, sysargv=self.sysargv, stderr=self.stderr, stdout=self.stdout)
 
     def get_weath(self):
-        owm = OWM('f24037ffa8bd7d12e0ffe3283144f1f9')
+        owm = OWM('')
         mgr = owm.weather_manager()
 
         try:
